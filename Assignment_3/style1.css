@@ -1,0 +1,51 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 390px;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    font-family: 'Franklin Gothic Medium','Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background-color: black;
+    color:white;
+    font-size: 30px;
+    padding: 40px 50px;
+    border: 2px solid rgb(201, 255, 7);
+    cursor: pointer;
+    border-radius: 40px 40px 40px 40px;
+  }
+  
+  .container .btn:hover {
+    box-shadow: 0 10px rgb(201, 255, 7);
+    transform: rotateY(-30deg);
+    transform: rotateX(20deg);
+    transition: all 1s;
+  }
