@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3a0ca3;
+}
+h2 {
+    text-decoration: solid;
+    text-align: center;
+    color: white;
+    text-shadow: black;
+    font-size: 50px;
+}
+
+ul{
+    list-style: none;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    position: sticky;
+    background-color: black;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50px;
+    width: 100vw;
+}
+
+@media screen and (max-width:530px) {
+    nav,ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.maindiv{
+    width: 1200px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(001.jpg);
+    background-size: 100% 100%;
+    margin: 20px auto;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 5px 5px white;
+    animation: slider 9s infinite linear;
+    display: flex;
+}
+
+@keyframes slider{
+    25%{
+        background-image: url(002.jpg);
+    }
+    25%{
+        background-image: url(003.jpg);
+    }
+    25%{
+        background-image: url(003.jpg);
+    }
+    25%{
+        background-image: url(004.jpg);
+    }
+}
+
+.footercontent {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+  }
+
+div {
+    height: 250px;
+    width: 250px;
+}
+
+section {
+    perspective: 800px;
+    display: flex;
+    justify-content: center;
+    margin : 500px auto;
+
+}
+
+.side-a {
+    background-image: url(001.jpg);
+    z-index: 1;
+}
+
+.side-b {
+    background-color: aqua;
+    transform: rotateY(180deg);
+}
+.side-a img {
+    height: 250px;
+    width: 250px;
+}
+
+.side-a, .side-b{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.wrap {
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.wrap:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
