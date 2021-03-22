@@ -1,0 +1,93 @@
+/*==================Header================*/
+
+#header .fixed {
+    width: 33vw;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("infinite.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+
+}
+
+/*================profilepic=================*/
+
+#profilepic {
+    width: 180px;
+}
+
+/*================first section==============*/
+
+#h1 {
+    padding-top: 14rem;
+    font-family: 'Roboto', sans-serif;
+    color: dark;
+    font-size: 2rem;
+}
+
+#p1 {
+    font-size: 1.5rem;
+}
+
+#btn {
+    font-size: 1.5rem;
+    color: green;
+}
+
+/*===================Second Section======================*/
+
+#skill_img {
+    width: 200px;
+    height: 200px;
+}
+
+#h5 {
+    font-family: 'Volkhov', serif;
+    color: dark;
+}
+
+/*=================Fourth Section==================*/
+
+#home{
+    font-family: roboto;
+    color: dark;
+    font-size: 0.7rem;
+}
+
+/*================Third section====================*/
+#certificates {
+    width: 800px;
+    height: 500px;
+  }
+
+
+@media (max-width: 768px) {
+    #header .fixed{
+        position: relative;
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+/*==============Social media==================*/
+.social-media ul a {
+    text-decoration: none;
+    color: white;
+    align-content: center;
+    padding-right: 20px;
+  
+  }
+  
+  .social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+  }
